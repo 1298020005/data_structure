@@ -122,6 +122,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/12980/workspace/CLionProjects/data_structure/Linear_list/demo.cpp">
+			<Option target="Link_list"/>
+		</Unit>
 		<Unit filename="C:/Users/12980/workspace/CLionProjects/data_structure/Linear_list/link_list.cpp">
 			<Option target="Link_list"/>
 		</Unit>

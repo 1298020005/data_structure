@@ -141,6 +141,30 @@ Link_list/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Link_list.dir\build.make CMakeFiles/Link_list.dir/build
 .PHONY : Link_list/fast
 
+Linear_list/demo.obj: Linear_list/demo.cpp.obj
+.PHONY : Linear_list/demo.obj
+
+# target to build an object file
+Linear_list/demo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Link_list.dir\build.make CMakeFiles/Link_list.dir/Linear_list/demo.cpp.obj
+.PHONY : Linear_list/demo.cpp.obj
+
+Linear_list/demo.i: Linear_list/demo.cpp.i
+.PHONY : Linear_list/demo.i
+
+# target to preprocess a source file
+Linear_list/demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Link_list.dir\build.make CMakeFiles/Link_list.dir/Linear_list/demo.cpp.i
+.PHONY : Linear_list/demo.cpp.i
+
+Linear_list/demo.s: Linear_list/demo.cpp.s
+.PHONY : Linear_list/demo.s
+
+# target to generate assembly for a file
+Linear_list/demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Link_list.dir\build.make CMakeFiles/Link_list.dir/Linear_list/demo.cpp.s
+.PHONY : Linear_list/demo.cpp.s
+
 Linear_list/link_list.obj: Linear_list/link_list.cpp.obj
 .PHONY : Linear_list/link_list.obj
 
@@ -199,6 +223,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... Link_list
 	@echo ... sequence_list
+	@echo ... Linear_list/demo.obj
+	@echo ... Linear_list/demo.i
+	@echo ... Linear_list/demo.s
 	@echo ... Linear_list/link_list.obj
 	@echo ... Linear_list/link_list.i
 	@echo ... Linear_list/link_list.s
