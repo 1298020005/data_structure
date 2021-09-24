@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = C:\Users\12980\workspace\CLionProjects\data_structure\cmake-b
 
 # The main recursive "all" target.
 all: CMakeFiles/sequence_list.dir/all
+all: CMakeFiles/demo.dir/all
 all: CMakeFiles/Link_list.dir/all
 .PHONY : all
 
@@ -72,6 +73,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/sequence_list.dir/clean
+clean: CMakeFiles/demo.dir/clean
 clean: CMakeFiles/Link_list.dir/clean
 .PHONY : clean
 
@@ -82,7 +84,7 @@ clean: CMakeFiles/Link_list.dir/clean
 CMakeFiles/sequence_list.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sequence_list.dir\build.make CMakeFiles/sequence_list.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sequence_list.dir\build.make CMakeFiles/sequence_list.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles --progress-num=4,5 "Built target sequence_list"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles --progress-num=6,7 "Built target sequence_list"
 .PHONY : CMakeFiles/sequence_list.dir/all
 
 # Build rule for subdir invocation for target.
@@ -100,6 +102,32 @@ sequence_list: CMakeFiles/sequence_list.dir/rule
 CMakeFiles/sequence_list.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sequence_list.dir\build.make CMakeFiles/sequence_list.dir/clean
 .PHONY : CMakeFiles/sequence_list.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/demo.dir
+
+# All Build rule for target.
+CMakeFiles/demo.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles --progress-num=4,5 "Built target demo"
+.PHONY : CMakeFiles/demo.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/demo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/demo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/demo.dir/rule
+
+# Convenience name for target.
+demo: CMakeFiles/demo.dir/rule
+.PHONY : demo
+
+# clean rule for target.
+CMakeFiles/demo.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/clean
+.PHONY : CMakeFiles/demo.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Link_list.dir

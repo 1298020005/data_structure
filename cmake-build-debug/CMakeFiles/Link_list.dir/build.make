@@ -78,29 +78,29 @@ CMakeFiles/Link_list.dir/Linear_list/link_list.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Link_list.dir/Linear_list/link_list.cpp.s"
 	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\12980\workspace\CLionProjects\data_structure\Linear_list\link_list.cpp -o CMakeFiles\Link_list.dir\Linear_list\link_list.cpp.s
 
-CMakeFiles/Link_list.dir/Linear_list/demo.cpp.obj: CMakeFiles/Link_list.dir/flags.make
-CMakeFiles/Link_list.dir/Linear_list/demo.cpp.obj: ../Linear_list/demo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Link_list.dir/Linear_list/demo.cpp.obj"
-	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Link_list.dir\Linear_list\demo.cpp.obj -c C:\Users\12980\workspace\CLionProjects\data_structure\Linear_list\demo.cpp
+CMakeFiles/Link_list.dir/demo.cpp.obj: CMakeFiles/Link_list.dir/flags.make
+CMakeFiles/Link_list.dir/demo.cpp.obj: ../demo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Link_list.dir/demo.cpp.obj"
+	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Link_list.dir\demo.cpp.obj -c C:\Users\12980\workspace\CLionProjects\data_structure\demo.cpp
 
-CMakeFiles/Link_list.dir/Linear_list/demo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Link_list.dir/Linear_list/demo.cpp.i"
-	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\12980\workspace\CLionProjects\data_structure\Linear_list\demo.cpp > CMakeFiles\Link_list.dir\Linear_list\demo.cpp.i
+CMakeFiles/Link_list.dir/demo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Link_list.dir/demo.cpp.i"
+	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\12980\workspace\CLionProjects\data_structure\demo.cpp > CMakeFiles\Link_list.dir\demo.cpp.i
 
-CMakeFiles/Link_list.dir/Linear_list/demo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Link_list.dir/Linear_list/demo.cpp.s"
-	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\12980\workspace\CLionProjects\data_structure\Linear_list\demo.cpp -o CMakeFiles\Link_list.dir\Linear_list\demo.cpp.s
+CMakeFiles/Link_list.dir/demo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Link_list.dir/demo.cpp.s"
+	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\12980\workspace\CLionProjects\data_structure\demo.cpp -o CMakeFiles\Link_list.dir\demo.cpp.s
 
 # Object files for target Link_list
 Link_list_OBJECTS = \
 "CMakeFiles/Link_list.dir/Linear_list/link_list.cpp.obj" \
-"CMakeFiles/Link_list.dir/Linear_list/demo.cpp.obj"
+"CMakeFiles/Link_list.dir/demo.cpp.obj"
 
 # External object files for target Link_list
 Link_list_EXTERNAL_OBJECTS =
 
 Link_list.exe: CMakeFiles/Link_list.dir/Linear_list/link_list.cpp.obj
-Link_list.exe: CMakeFiles/Link_list.dir/Linear_list/demo.cpp.obj
+Link_list.exe: CMakeFiles/Link_list.dir/demo.cpp.obj
 Link_list.exe: CMakeFiles/Link_list.dir/build.make
 Link_list.exe: CMakeFiles/Link_list.dir/linklibs.rsp
 Link_list.exe: CMakeFiles/Link_list.dir/objects1.rsp
