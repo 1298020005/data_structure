@@ -57,14 +57,14 @@ void display(line * head) {
     }
 }
     
-int main() {
-    //创建一个头指针
-    line * head = NULL;
-    //调用链表创建函数
-    head = initLine(head);
-    //输出创建好的链表
-    display(head);
-    //显示双链表的优点
-    printf("链表中第 4 个节点的直接前驱是：%d", head->next->next->next->prior->data);
-    return 0;
-}
+//int main() {
+//    //创建一个头指针
+//    line * head = NULL;
+//    //调用链表创建函数
+//    head = initLine(head);
+//    //输出创建好的链表
+//    display(head);
+//    //显示双链表的优点
+//    printf("链表中第 4 个节点的直接前驱是：%d", head->next->next->next->prior->data);
+//    return 0;
+//}

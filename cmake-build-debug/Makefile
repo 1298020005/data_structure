@@ -181,6 +181,19 @@ link_list/fast:
 .PHONY : link_list/fast
 
 #=============================================================================
+# Target rules for targets named double_link_operate
+
+# Build rule for target.
+double_link_operate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 double_link_operate
+.PHONY : double_link_operate
+
+# fast build rule for target.
+double_link_operate/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\double_link_operate.dir\build.make CMakeFiles/double_link_operate.dir/build
+.PHONY : double_link_operate/fast
+
+#=============================================================================
 # Target rules for targets named link_operate
 
 # Build rule for target.
@@ -216,6 +229,33 @@ Linear_list/double_link.s: Linear_list/double_link.cpp.s
 Linear_list/double_link.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\double_link.dir\build.make CMakeFiles/double_link.dir/Linear_list/double_link.cpp.s
 .PHONY : Linear_list/double_link.cpp.s
+
+Linear_list/doublle_link_operate.obj: Linear_list/doublle_link_operate.cpp.obj
+.PHONY : Linear_list/doublle_link_operate.obj
+
+# target to build an object file
+Linear_list/doublle_link_operate.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sequence_operate.dir\build.make CMakeFiles/sequence_operate.dir/Linear_list/doublle_link_operate.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\double_link_operate.dir\build.make CMakeFiles/double_link_operate.dir/Linear_list/doublle_link_operate.cpp.obj
+.PHONY : Linear_list/doublle_link_operate.cpp.obj
+
+Linear_list/doublle_link_operate.i: Linear_list/doublle_link_operate.cpp.i
+.PHONY : Linear_list/doublle_link_operate.i
+
+# target to preprocess a source file
+Linear_list/doublle_link_operate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sequence_operate.dir\build.make CMakeFiles/sequence_operate.dir/Linear_list/doublle_link_operate.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\double_link_operate.dir\build.make CMakeFiles/double_link_operate.dir/Linear_list/doublle_link_operate.cpp.i
+.PHONY : Linear_list/doublle_link_operate.cpp.i
+
+Linear_list/doublle_link_operate.s: Linear_list/doublle_link_operate.cpp.s
+.PHONY : Linear_list/doublle_link_operate.s
+
+# target to generate assembly for a file
+Linear_list/doublle_link_operate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sequence_operate.dir\build.make CMakeFiles/sequence_operate.dir/Linear_list/doublle_link_operate.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\double_link_operate.dir\build.make CMakeFiles/double_link_operate.dir/Linear_list/doublle_link_operate.cpp.s
+.PHONY : Linear_list/doublle_link_operate.cpp.s
 
 Linear_list/link_list.obj: Linear_list/link_list.cpp.obj
 .PHONY : Linear_list/link_list.obj
@@ -350,6 +390,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... demo
 	@echo ... double_link
+	@echo ... double_link_operate
 	@echo ... link_list
 	@echo ... link_operate
 	@echo ... sequence_list
@@ -357,6 +398,9 @@ help:
 	@echo ... Linear_list/double_link.obj
 	@echo ... Linear_list/double_link.i
 	@echo ... Linear_list/double_link.s
+	@echo ... Linear_list/doublle_link_operate.obj
+	@echo ... Linear_list/doublle_link_operate.i
+	@echo ... Linear_list/doublle_link_operate.s
 	@echo ... Linear_list/link_list.obj
 	@echo ... Linear_list/link_list.i
 	@echo ... Linear_list/link_list.s
