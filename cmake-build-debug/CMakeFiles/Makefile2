@@ -66,6 +66,7 @@ all: CMakeFiles/sequence_list.dir/all
 all: CMakeFiles/sequence_operate.dir/all
 all: CMakeFiles/demo.dir/all
 all: CMakeFiles/link_list.dir/all
+all: CMakeFiles/link_operate.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -77,6 +78,7 @@ clean: CMakeFiles/sequence_list.dir/clean
 clean: CMakeFiles/sequence_operate.dir/clean
 clean: CMakeFiles/demo.dir/clean
 clean: CMakeFiles/link_list.dir/clean
+clean: CMakeFiles/link_operate.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -86,7 +88,7 @@ clean: CMakeFiles/link_list.dir/clean
 CMakeFiles/sequence_list.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sequence_list.dir\build.make CMakeFiles/sequence_list.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sequence_list.dir\build.make CMakeFiles/sequence_list.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target sequence_list"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target sequence_list"
 .PHONY : CMakeFiles/sequence_list.dir/all
 
 # Build rule for subdir invocation for target.
@@ -112,12 +114,12 @@ CMakeFiles/sequence_list.dir/clean:
 CMakeFiles/sequence_operate.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sequence_operate.dir\build.make CMakeFiles/sequence_operate.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sequence_operate.dir\build.make CMakeFiles/sequence_operate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target sequence_operate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles --progress-num=9,10,11 "Built target sequence_operate"
 .PHONY : CMakeFiles/sequence_operate.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sequence_operate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/sequence_operate.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/sequence_operate.dir/rule
@@ -182,6 +184,32 @@ link_list: CMakeFiles/link_list.dir/rule
 CMakeFiles/link_list.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\link_list.dir\build.make CMakeFiles/link_list.dir/clean
 .PHONY : CMakeFiles/link_list.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/link_operate.dir
+
+# All Build rule for target.
+CMakeFiles/link_operate.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\link_operate.dir\build.make CMakeFiles/link_operate.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\link_operate.dir\build.make CMakeFiles/link_operate.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target link_operate"
+.PHONY : CMakeFiles/link_operate.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/link_operate.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/link_operate.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/link_operate.dir/rule
+
+# Convenience name for target.
+link_operate: CMakeFiles/link_operate.dir/rule
+.PHONY : link_operate
+
+# clean rule for target.
+CMakeFiles/link_operate.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\link_operate.dir\build.make CMakeFiles/link_operate.dir/clean
+.PHONY : CMakeFiles/link_operate.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

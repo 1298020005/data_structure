@@ -10,14 +10,7 @@ link * initLink();
 //用于输出链表的函数
 void display(link *p);
 
-int main() {
-    link*p = NULL;
-    //初始化链表（1，2，3，4）
-    printf("初始化链表为：\n");
-    p = initLink();
-    display(p);
-    return 0;
-}
+
 
 //初始化有头结点的链表
 link * initLink(){
@@ -50,3 +43,13 @@ void display(link *p){
     }
     printf("\n");
 }
+
+
+//int main() {
+//    link*p = NULL;
+//    //初始化链表（1，2，3，4）
+//    printf("初始化链表为：\n");
+//    p = initLink();
+//    display(p);
+//    return 0;
+//}

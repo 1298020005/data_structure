@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/12980/workspace/CLionProjects/data_structure/Linear_list/sequence_list.cpp" "C:/Users/12980/workspace/CLionProjects/data_structure/cmake-build-debug/CMakeFiles/sequence_operate.dir/Linear_list/sequence_list.cpp.obj"
   "C:/Users/12980/workspace/CLionProjects/data_structure/Linear_list/sequence_operate.cpp" "C:/Users/12980/workspace/CLionProjects/data_structure/cmake-build-debug/CMakeFiles/sequence_operate.dir/Linear_list/sequence_operate.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
