@@ -28,15 +28,15 @@ void displayTable(table t) {
     printf("\n");
 }
 
-int main() {
-    int i;
-    table t = initTable();
-    //向顺序表中添加元素
-    for (i = 1; i <= Size; i++) {
-        t.head[i - 1] = i;
-        t.length++;
-    }
-    printf("顺序表中存储的元素分别是：\n");
-    displayTable(t);
-    return 0;
-}
+//int main() {
+//    int i;
+//    table t = initTable();
+//    //向顺序表中添加元素
+//    for (i = 1; i <= Size; i++) {
+//        t.head[i - 1] = i;
+//        t.length++;
+//    }
+//    printf("顺序表中存储的元素分别是：\n");
+//    displayTable(t);
+//    return 0;
+//}

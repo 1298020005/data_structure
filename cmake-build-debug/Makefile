@@ -129,6 +129,19 @@ sequence_list/fast:
 .PHONY : sequence_list/fast
 
 #=============================================================================
+# Target rules for targets named sequence_operate
+
+# Build rule for target.
+sequence_operate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sequence_operate
+.PHONY : sequence_operate
+
+# fast build rule for target.
+sequence_operate/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sequence_operate.dir\build.make CMakeFiles/sequence_operate.dir/build
+.PHONY : sequence_operate/fast
+
+#=============================================================================
 # Target rules for targets named demo
 
 # Build rule for target.
@@ -140,43 +153,6 @@ demo: cmake_check_build_system
 demo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/build
 .PHONY : demo/fast
-
-#=============================================================================
-# Target rules for targets named Link_list
-
-# Build rule for target.
-Link_list: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Link_list
-.PHONY : Link_list
-
-# fast build rule for target.
-Link_list/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Link_list.dir\build.make CMakeFiles/Link_list.dir/build
-.PHONY : Link_list/fast
-
-Linear_list/link_list.obj: Linear_list/link_list.cpp.obj
-.PHONY : Linear_list/link_list.obj
-
-# target to build an object file
-Linear_list/link_list.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Link_list.dir\build.make CMakeFiles/Link_list.dir/Linear_list/link_list.cpp.obj
-.PHONY : Linear_list/link_list.cpp.obj
-
-Linear_list/link_list.i: Linear_list/link_list.cpp.i
-.PHONY : Linear_list/link_list.i
-
-# target to preprocess a source file
-Linear_list/link_list.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Link_list.dir\build.make CMakeFiles/Link_list.dir/Linear_list/link_list.cpp.i
-.PHONY : Linear_list/link_list.cpp.i
-
-Linear_list/link_list.s: Linear_list/link_list.cpp.s
-.PHONY : Linear_list/link_list.s
-
-# target to generate assembly for a file
-Linear_list/link_list.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Link_list.dir\build.make CMakeFiles/Link_list.dir/Linear_list/link_list.cpp.s
-.PHONY : Linear_list/link_list.cpp.s
 
 Linear_list/sequence_list.obj: Linear_list/sequence_list.cpp.obj
 .PHONY : Linear_list/sequence_list.obj
@@ -202,13 +178,36 @@ Linear_list/sequence_list.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sequence_list.dir\build.make CMakeFiles/sequence_list.dir/Linear_list/sequence_list.cpp.s
 .PHONY : Linear_list/sequence_list.cpp.s
 
+Linear_list/sequence_operate.obj: Linear_list/sequence_operate.cpp.obj
+.PHONY : Linear_list/sequence_operate.obj
+
+# target to build an object file
+Linear_list/sequence_operate.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sequence_operate.dir\build.make CMakeFiles/sequence_operate.dir/Linear_list/sequence_operate.cpp.obj
+.PHONY : Linear_list/sequence_operate.cpp.obj
+
+Linear_list/sequence_operate.i: Linear_list/sequence_operate.cpp.i
+.PHONY : Linear_list/sequence_operate.i
+
+# target to preprocess a source file
+Linear_list/sequence_operate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sequence_operate.dir\build.make CMakeFiles/sequence_operate.dir/Linear_list/sequence_operate.cpp.i
+.PHONY : Linear_list/sequence_operate.cpp.i
+
+Linear_list/sequence_operate.s: Linear_list/sequence_operate.cpp.s
+.PHONY : Linear_list/sequence_operate.s
+
+# target to generate assembly for a file
+Linear_list/sequence_operate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sequence_operate.dir\build.make CMakeFiles/sequence_operate.dir/Linear_list/sequence_operate.cpp.s
+.PHONY : Linear_list/sequence_operate.cpp.s
+
 demo.obj: demo.cpp.obj
 .PHONY : demo.obj
 
 # target to build an object file
 demo.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/demo.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Link_list.dir\build.make CMakeFiles/Link_list.dir/demo.cpp.obj
 .PHONY : demo.cpp.obj
 
 demo.i: demo.cpp.i
@@ -217,7 +216,6 @@ demo.i: demo.cpp.i
 # target to preprocess a source file
 demo.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/demo.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Link_list.dir\build.make CMakeFiles/Link_list.dir/demo.cpp.i
 .PHONY : demo.cpp.i
 
 demo.s: demo.cpp.s
@@ -226,7 +224,6 @@ demo.s: demo.cpp.s
 # target to generate assembly for a file
 demo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/demo.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Link_list.dir\build.make CMakeFiles/Link_list.dir/demo.cpp.s
 .PHONY : demo.cpp.s
 
 # Help Target
@@ -237,15 +234,15 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Link_list
 	@echo ... demo
 	@echo ... sequence_list
-	@echo ... Linear_list/link_list.obj
-	@echo ... Linear_list/link_list.i
-	@echo ... Linear_list/link_list.s
+	@echo ... sequence_operate
 	@echo ... Linear_list/sequence_list.obj
 	@echo ... Linear_list/sequence_list.i
 	@echo ... Linear_list/sequence_list.s
+	@echo ... Linear_list/sequence_operate.obj
+	@echo ... Linear_list/sequence_operate.i
+	@echo ... Linear_list/sequence_operate.s
 	@echo ... demo.obj
 	@echo ... demo.i
 	@echo ... demo.s
