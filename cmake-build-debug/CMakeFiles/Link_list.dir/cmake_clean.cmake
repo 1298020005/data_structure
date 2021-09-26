@@ -1,14 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Link_list.dir/Linear_list/link_list.cpp.obj"
-  "CMakeFiles/Link_list.dir/Linear_list/sequence_operate.cpp.obj"
-  "CMakeFiles/Link_list.dir/demo.cpp.obj"
-  "Link_list.exe"
-  "Link_list.exe.manifest"
-  "Link_list.pdb"
-  "libLink_list.dll.a"
+  "CMakeFiles/link_list.dir/Linear_list/link_list.cpp.obj"
+  "liblink_list.dll.a"
+  "link_list.exe"
+  "link_list.exe.manifest"
+  "link_list.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
 foreach(lang CXX)
-  include(CMakeFiles/Link_list.dir/cmake_clean_${lang}.cmake OPTIONAL)
+  include(CMakeFiles/link_list.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

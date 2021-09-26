@@ -58,80 +58,50 @@ CMAKE_SOURCE_DIR = C:\Users\12980\workspace\CLionProjects\data_structure
 CMAKE_BINARY_DIR = C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug
 
 # Include any dependencies generated for this target.
-include CMakeFiles/Link_list.dir/depend.make
+include CMakeFiles/link_list.dir/depend.make
 # Include the progress variables for this target.
-include CMakeFiles/Link_list.dir/progress.make
+include CMakeFiles/link_list.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include CMakeFiles/Link_list.dir/flags.make
+include CMakeFiles/link_list.dir/flags.make
 
-CMakeFiles/Link_list.dir/Linear_list/link_list.cpp.obj: CMakeFiles/Link_list.dir/flags.make
-CMakeFiles/Link_list.dir/Linear_list/link_list.cpp.obj: ../Linear_list/link_list.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Link_list.dir/Linear_list/link_list.cpp.obj"
-	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Link_list.dir\Linear_list\link_list.cpp.obj -c C:\Users\12980\workspace\CLionProjects\data_structure\Linear_list\link_list.cpp
+CMakeFiles/link_list.dir/Linear_list/link_list.cpp.obj: CMakeFiles/link_list.dir/flags.make
+CMakeFiles/link_list.dir/Linear_list/link_list.cpp.obj: ../Linear_list/link_list.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/link_list.dir/Linear_list/link_list.cpp.obj"
+	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\link_list.dir\Linear_list\link_list.cpp.obj -c C:\Users\12980\workspace\CLionProjects\data_structure\Linear_list\link_list.cpp
 
-CMakeFiles/Link_list.dir/Linear_list/link_list.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Link_list.dir/Linear_list/link_list.cpp.i"
-	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\12980\workspace\CLionProjects\data_structure\Linear_list\link_list.cpp > CMakeFiles\Link_list.dir\Linear_list\link_list.cpp.i
+CMakeFiles/link_list.dir/Linear_list/link_list.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/link_list.dir/Linear_list/link_list.cpp.i"
+	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\12980\workspace\CLionProjects\data_structure\Linear_list\link_list.cpp > CMakeFiles\link_list.dir\Linear_list\link_list.cpp.i
 
-CMakeFiles/Link_list.dir/Linear_list/link_list.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Link_list.dir/Linear_list/link_list.cpp.s"
-	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\12980\workspace\CLionProjects\data_structure\Linear_list\link_list.cpp -o CMakeFiles\Link_list.dir\Linear_list\link_list.cpp.s
+CMakeFiles/link_list.dir/Linear_list/link_list.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/link_list.dir/Linear_list/link_list.cpp.s"
+	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\12980\workspace\CLionProjects\data_structure\Linear_list\link_list.cpp -o CMakeFiles\link_list.dir\Linear_list\link_list.cpp.s
 
-CMakeFiles/Link_list.dir/demo.cpp.obj: CMakeFiles/Link_list.dir/flags.make
-CMakeFiles/Link_list.dir/demo.cpp.obj: ../demo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Link_list.dir/demo.cpp.obj"
-	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Link_list.dir\demo.cpp.obj -c C:\Users\12980\workspace\CLionProjects\data_structure\demo.cpp
+# Object files for target link_list
+link_list_OBJECTS = \
+"CMakeFiles/link_list.dir/Linear_list/link_list.cpp.obj"
 
-CMakeFiles/Link_list.dir/demo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Link_list.dir/demo.cpp.i"
-	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\12980\workspace\CLionProjects\data_structure\demo.cpp > CMakeFiles\Link_list.dir\demo.cpp.i
+# External object files for target link_list
+link_list_EXTERNAL_OBJECTS =
 
-CMakeFiles/Link_list.dir/demo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Link_list.dir/demo.cpp.s"
-	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\12980\workspace\CLionProjects\data_structure\demo.cpp -o CMakeFiles\Link_list.dir\demo.cpp.s
-
-CMakeFiles/Link_list.dir/Linear_list/sequence_operate.cpp.obj: CMakeFiles/Link_list.dir/flags.make
-CMakeFiles/Link_list.dir/Linear_list/sequence_operate.cpp.obj: ../Linear_list/sequence_operate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Link_list.dir/Linear_list/sequence_operate.cpp.obj"
-	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Link_list.dir\Linear_list\sequence_operate.cpp.obj -c C:\Users\12980\workspace\CLionProjects\data_structure\Linear_list\sequence_operate.cpp
-
-CMakeFiles/Link_list.dir/Linear_list/sequence_operate.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Link_list.dir/Linear_list/sequence_operate.cpp.i"
-	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\12980\workspace\CLionProjects\data_structure\Linear_list\sequence_operate.cpp > CMakeFiles\Link_list.dir\Linear_list\sequence_operate.cpp.i
-
-CMakeFiles/Link_list.dir/Linear_list/sequence_operate.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Link_list.dir/Linear_list/sequence_operate.cpp.s"
-	C:\PROGRA~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\12980\workspace\CLionProjects\data_structure\Linear_list\sequence_operate.cpp -o CMakeFiles\Link_list.dir\Linear_list\sequence_operate.cpp.s
-
-# Object files for target Link_list
-Link_list_OBJECTS = \
-"CMakeFiles/Link_list.dir/Linear_list/link_list.cpp.obj" \
-"CMakeFiles/Link_list.dir/demo.cpp.obj" \
-"CMakeFiles/Link_list.dir/Linear_list/sequence_operate.cpp.obj"
-
-# External object files for target Link_list
-Link_list_EXTERNAL_OBJECTS =
-
-Link_list.exe: CMakeFiles/Link_list.dir/Linear_list/link_list.cpp.obj
-Link_list.exe: CMakeFiles/Link_list.dir/demo.cpp.obj
-Link_list.exe: CMakeFiles/Link_list.dir/Linear_list/sequence_operate.cpp.obj
-Link_list.exe: CMakeFiles/Link_list.dir/build.make
-Link_list.exe: CMakeFiles/Link_list.dir/linklibs.rsp
-Link_list.exe: CMakeFiles/Link_list.dir/objects1.rsp
-Link_list.exe: CMakeFiles/Link_list.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Link_list.exe"
-	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Link_list.dir\link.txt --verbose=$(VERBOSE)
+link_list.exe: CMakeFiles/link_list.dir/Linear_list/link_list.cpp.obj
+link_list.exe: CMakeFiles/link_list.dir/build.make
+link_list.exe: CMakeFiles/link_list.dir/linklibs.rsp
+link_list.exe: CMakeFiles/link_list.dir/objects1.rsp
+link_list.exe: CMakeFiles/link_list.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable link_list.exe"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\link_list.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Link_list.dir/build: Link_list.exe
-.PHONY : CMakeFiles/Link_list.dir/build
+CMakeFiles/link_list.dir/build: link_list.exe
+.PHONY : CMakeFiles/link_list.dir/build
 
-CMakeFiles/Link_list.dir/clean:
-	$(CMAKE_COMMAND) -P CMakeFiles\Link_list.dir\cmake_clean.cmake
-.PHONY : CMakeFiles/Link_list.dir/clean
+CMakeFiles/link_list.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles\link_list.dir\cmake_clean.cmake
+.PHONY : CMakeFiles/link_list.dir/clean
 
-CMakeFiles/Link_list.dir/depend:
+CMakeFiles/link_list.dir/depend:
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\12980\workspace\CLionProjects\data_structure C:\Users\12980\workspace\CLionProjects\data_structure C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug C:\Users\12980\workspace\CLionProjects\data_structure\cmake-build-debug\CMakeFiles\Link_list.dir\DependInfo.cmake --color=$(COLOR)
-.PHONY : CMakeFiles/Link_list.dir/depend
+.PHONY : CMakeFiles/link_list.dir/depend
 
