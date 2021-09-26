@@ -1,24 +1,25 @@
 #include <stdio.h>
-#include <stdlib.h>  //malloc()ã€exit()
-#define Size 5
-typedef struct Table {
-    int * head;
-    int length;
-    int size;
+#include <stdlib.h>  //malloc()¡¢exit()
+
+typedef struct Table{
+    int * head;//ÉùÃ÷ÁËÒ»¸öÃûÎªheadµÄ³¤¶È²»È·¶¨µÄÊı×é£¬Ò²½Ğ¡°¶¯Ì¬Êı×é¡±
+    int length;//¼ÇÂ¼µ±Ç°Ë³Ğò±íµÄ³¤¶È
+    int size;//¼ÇÂ¼Ë³Ğò±í·ÖÅäµÄ´æ´¢ÈİÁ¿
 }table;
-table initTable() {
+
+
+#define Size 5 //¶ÔSize½øĞĞºê¶¨Òå£¬±íÊ¾Ë³Ğò±íÉêÇë¿Õ¼äµÄ´óĞ¡
+table initTable(){
     table t;
-    t.head = (int*)malloc(Size * sizeof(int));
-    if (!t.head)
-    {
-        printf("åˆå§‹åŒ–å¤±è´¥");
-        exit(0);
-    }
-    t.length = 0;
-    t.size = Size;
-    return t;
-}
-//è¾“å‡ºé¡ºåºè¡¨ä¸­å…ƒç´ çš„å‡½æ•°
+    t.head = (int*)malloc(Size * sizeof(int));//¹¹ÔìÒ»¸ö¿ÕµÄË³Ğò±í£¬¶¯Ì¬ÉêÇë´æ´¢¿Õ¼ä
+    if (!t.head) //Èç¹ûÉêÇëÊ§°Ü£¬×÷³öÌáÊ¾²¢Ö±½ÓÍË³ö³ÌĞò
+    {        printf("³õÊ¼»¯Ê§°Ü");
+        exit(0);    }
+    t.length = 0;//¿Õ±íµÄ³¤¶È³õÊ¼»¯Îª0
+    t.size = Size;//¿Õ±íµÄ³õÊ¼´æ´¢¿Õ¼äÎªSize
+    return t;}
+
+//Êä³öË³Ğò±íÖĞÔªËØµÄº¯Êı
 void displayTable(table t) {
     int i;
     for (i = 0; i < t.length; i++) {
@@ -26,15 +27,16 @@ void displayTable(table t) {
     }
     printf("\n");
 }
+
 int main() {
     int i;
     table t = initTable();
-    //å‘é¡ºåºè¡¨ä¸­æ·»åŠ å…ƒç´ 
+    //ÏòË³Ğò±íÖĞÌí¼ÓÔªËØ
     for (i = 1; i <= Size; i++) {
         t.head[i - 1] = i;
         t.length++;
     }
-    printf("é¡ºåºè¡¨ä¸­å­˜å‚¨çš„å…ƒç´ åˆ†åˆ«æ˜¯ï¼š\n");
+    printf("Ë³Ğò±íÖĞ´æ´¢µÄÔªËØ·Ö±ğÊÇ£º\n");
     displayTable(t);
     return 0;
 }
