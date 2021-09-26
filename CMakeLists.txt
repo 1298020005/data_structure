@@ -12,6 +12,7 @@ add_executable(sequence_operate Linear_list/sequence_list.cpp Linear_list/sequen
 ### 链表
 add_executable(link_list Linear_list/link_list.cpp )
 add_executable(link_operate  Linear_list/link_operate.cpp)
-
+####双向链表
+add_executable(double_link  Linear_list/double_link.cpp)
 
 add_executable(demo  demo.cpp)

@@ -51,6 +51,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/double_link.dir/DependInfo.cmake"
   "CMakeFiles/sequence_list.dir/DependInfo.cmake"
   "CMakeFiles/sequence_operate.dir/DependInfo.cmake"
   "CMakeFiles/demo.dir/DependInfo.cmake"

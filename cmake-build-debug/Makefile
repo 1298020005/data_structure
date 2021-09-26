@@ -116,6 +116,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named double_link
+
+# Build rule for target.
+double_link: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 double_link
+.PHONY : double_link
+
+# fast build rule for target.
+double_link/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\double_link.dir\build.make CMakeFiles/double_link.dir/build
+.PHONY : double_link/fast
+
+#=============================================================================
 # Target rules for targets named sequence_list
 
 # Build rule for target.
@@ -179,6 +192,30 @@ link_operate: cmake_check_build_system
 link_operate/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\link_operate.dir\build.make CMakeFiles/link_operate.dir/build
 .PHONY : link_operate/fast
+
+Linear_list/double_link.obj: Linear_list/double_link.cpp.obj
+.PHONY : Linear_list/double_link.obj
+
+# target to build an object file
+Linear_list/double_link.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\double_link.dir\build.make CMakeFiles/double_link.dir/Linear_list/double_link.cpp.obj
+.PHONY : Linear_list/double_link.cpp.obj
+
+Linear_list/double_link.i: Linear_list/double_link.cpp.i
+.PHONY : Linear_list/double_link.i
+
+# target to preprocess a source file
+Linear_list/double_link.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\double_link.dir\build.make CMakeFiles/double_link.dir/Linear_list/double_link.cpp.i
+.PHONY : Linear_list/double_link.cpp.i
+
+Linear_list/double_link.s: Linear_list/double_link.cpp.s
+.PHONY : Linear_list/double_link.s
+
+# target to generate assembly for a file
+Linear_list/double_link.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\double_link.dir\build.make CMakeFiles/double_link.dir/Linear_list/double_link.cpp.s
+.PHONY : Linear_list/double_link.cpp.s
 
 Linear_list/link_list.obj: Linear_list/link_list.cpp.obj
 .PHONY : Linear_list/link_list.obj
@@ -312,10 +349,14 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... demo
+	@echo ... double_link
 	@echo ... link_list
 	@echo ... link_operate
 	@echo ... sequence_list
 	@echo ... sequence_operate
+	@echo ... Linear_list/double_link.obj
+	@echo ... Linear_list/double_link.i
+	@echo ... Linear_list/double_link.s
 	@echo ... Linear_list/link_list.obj
 	@echo ... Linear_list/link_list.i
 	@echo ... Linear_list/link_list.s
