@@ -1,47 +1,52 @@
 #include <stdio.h>
 #include <stdlib.h>
-//é“¾è¡¨ä¸­èŠ‚ç‚¹çš„ç»“æ„
-typedef struct Link {
-    int  elem;
-    struct Link *next;
-}link;
-//åˆå§‹åŒ–é“¾è¡¨çš„å‡½æ•°
+//Á´±íÖĞ½ÚµãµÄ½á¹¹
+typedef struct Link{
+    char elem; //´ú±íÊı¾İÓò
+    struct Link * next; //´ú±íÖ¸ÕëÓò£¬Ö¸ÏòÖ±½Óºó¼ÌÔªËØ
+}link; //linkÎª½ÚµãÃû£¬Ã¿¸ö½Úµã¶¼ÊÇÒ»¸ö link ½á¹¹Ìå
+//³õÊ¼»¯Á´±íµÄº¯Êı
 link * initLink();
-//ç”¨äºè¾“å‡ºé“¾è¡¨çš„å‡½æ•°
+//ÓÃÓÚÊä³öÁ´±íµÄº¯Êı
 void display(link *p);
 
 int main() {
     link*p = NULL;
-    //åˆå§‹åŒ–é“¾è¡¨ï¼ˆ1ï¼Œ2ï¼Œ3ï¼Œ4ï¼‰
-    printf("åˆå§‹åŒ–é“¾è¡¨ä¸ºï¼š\n");
+    //³õÊ¼»¯Á´±í£¨1£¬2£¬3£¬4£©
+    printf("³õÊ¼»¯Á´±íÎª£º\n");
     p = initLink();
     display(p);
     return 0;
 }
 
-link * initLink() {
+//³õÊ¼»¯ÓĞÍ·½áµãµÄÁ´±í
+link * initLink(){
     int i;
-    link * p = NULL;//åˆ›å»ºå¤´æŒ‡é’ˆ
-    link * temp = (link*)malloc(sizeof(link));//åˆ›å»ºé¦–å…ƒèŠ‚ç‚¹
-    //é¦–å…ƒèŠ‚ç‚¹å…ˆåˆå§‹åŒ–
-    temp->elem = 1;
-    temp->next = NULL;
-    p = temp;//å¤´æŒ‡é’ˆæŒ‡å‘é¦–å…ƒèŠ‚ç‚¹
-    for (i = 2; i < 5; i++) {
-        link *a = (link*)malloc(sizeof(link));
-        a->elem = i;
-        a->next = NULL;
-        temp->next = a;
-        temp = temp->next;
+    link * p=(link*)malloc(sizeof(link));//´´½¨Ò»¸öÍ·½áµã
+    link * temp=p;//ÉùÃ÷Ò»¸öÖ¸ÕëÖ¸ÏòÍ·½áµã£¬
+    //Éú³ÉÁ´±í
+    for (i=1; i<5; i++) {
+        //´´½¨Ò»¸öĞÂ½áµã²¢³õÊ¼»¯
+        link *a=(link*)malloc(sizeof(link));
+        a->elem=i;
+        a->next=NULL;
+        //½«temp½áµãÓëĞÂ½¨Á¢µÄa½áµã½¨Á¢Âß¼­¹ØÏµ
+        temp->next=a;
+        //Ö¸ÕëtempÃ¿´Î¶¼Ö¸ÏòĞÂÁ´±íµÄ×îºóÒ»¸ö½Úµã£¬ÆäÊµ¾ÍÊÇ a½Úµã£¬ÕâÀïĞ´temp=aÒ²¶Ô
+        temp=temp->next;
     }
+    //·µ»Ø½¨Á¢µÄ½Úµã£¬Ö»·µ»ØÍ·Ö¸Õë p¼´¿É£¬Í¨¹ıÍ·Ö¸Õë¼´¿ÉÕÒµ½Õû¸öÁ´±í
     return p;
 }
-void display(link *p) {
-    link* temp = p;//å°†tempæŒ‡é’ˆé‡æ–°æŒ‡å‘å¤´ç»“ç‚¹
-    //åªè¦tempæŒ‡é’ˆæŒ‡å‘çš„ç»“ç‚¹çš„nextä¸æ˜¯Nullï¼Œå°±æ‰§è¡Œè¾“å‡ºè¯­å¥ã€‚
-    while (temp) {
-        printf("%d ", temp->elem);
-        temp = temp->next;
+
+
+void display(link *p){
+    link* temp=p;//½«tempÖ¸ÕëÖØĞÂÖ¸ÏòÍ·½áµã
+    //Ö»ÒªtempÖ¸ÕëÖ¸ÏòµÄ½áµãµÄnext²»ÊÇNull£¬¾ÍÖ´ĞĞÊä³öÓï¾ä¡£
+    //while ÕâÀï ÎÒµÚÒ»´ÎĞ´µÄÊÇ£¡ ´íÁËºÃ¾Ã
+    while (temp->next) {
+        temp=temp->next;
+        printf("%d",temp->elem);
     }
     printf("\n");
 }

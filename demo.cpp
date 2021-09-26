@@ -1,37 +1,36 @@
-
-
-
 #include <cstdlib>
 #include <cstdio>
 
-typedef struct Table{
-    int * head;
-    int size;
-    int length;
-}table;
+typedef struct Link{
+    int elem;
+    struct  Link * next;
+}link;
 
-table initTable(){
-    table t;
-    t.length=0;
-    t.size=5;
-    t.head=(int*)malloc(5*sizeof(int ));
-    return t;
-}
-void display(table t){
-    for (int i = 0; i < t.size; ++i) {
-        printf("%d",t.head[i]);
+//  有头结点的链表
+link* initLink(){
+    link* p=(link *) malloc(sizeof (link));
+    link *temp=p;
+    for (int i = 1; i < 5; ++i) {
+        link * a= (link*)malloc(sizeof (link));
+        a->elem=i;
+        a->next=NULL;
+        temp->next=a;
+        temp=temp->next;
+    }
+    return p;
+};
+
+void display(link* p){
+    link *temp=p;
+    while(temp->next) {
+        temp=temp->next;
+        printf("%d",temp->elem);
     }
 }
-table insert(table t){
-    for (int i = 1; i < t.size; i++) {
-        t.head[i-1]=i;
-        t.length++;
-    }
-    return t;
-}
+
 int main(){
-    table t=initTable();
-    insert(t);
-    display(t);
-    return 0;
+    link * p;
+    p=initLink();
+    display(p);
+    return  0;
 }
