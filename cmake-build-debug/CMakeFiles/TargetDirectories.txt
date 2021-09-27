@@ -7,5 +7,7 @@ C:/Users/12980/workspace/CLionProjects/data_structure/cmake-build-debug/CMakeFil
 C:/Users/12980/workspace/CLionProjects/data_structure/cmake-build-debug/CMakeFiles/double_link_operate.dir
 C:/Users/12980/workspace/CLionProjects/data_structure/cmake-build-debug/CMakeFiles/link_operate.dir
 C:/Users/12980/workspace/CLionProjects/data_structure/cmake-build-debug/CMakeFiles/link_stack.dir
+C:/Users/12980/workspace/CLionProjects/data_structure/cmake-build-debug/CMakeFiles/sequence_queue.dir
+C:/Users/12980/workspace/CLionProjects/data_structure/cmake-build-debug/CMakeFiles/loop_queue.dir
 C:/Users/12980/workspace/CLionProjects/data_structure/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/12980/workspace/CLionProjects/data_structure/cmake-build-debug/CMakeFiles/rebuild_cache.dir

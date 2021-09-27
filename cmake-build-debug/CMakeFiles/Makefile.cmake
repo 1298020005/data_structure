@@ -60,4 +60,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/double_link_operate.dir/DependInfo.cmake"
   "CMakeFiles/link_operate.dir/DependInfo.cmake"
   "CMakeFiles/link_stack.dir/DependInfo.cmake"
+  "CMakeFiles/sequence_queue.dir/DependInfo.cmake"
+  "CMakeFiles/loop_queue.dir/DependInfo.cmake"
   )

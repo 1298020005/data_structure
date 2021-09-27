@@ -232,6 +232,32 @@ link_stack/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\link_stack.dir\build.make CMakeFiles/link_stack.dir/build
 .PHONY : link_stack/fast
 
+#=============================================================================
+# Target rules for targets named sequence_queue
+
+# Build rule for target.
+sequence_queue: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sequence_queue
+.PHONY : sequence_queue
+
+# fast build rule for target.
+sequence_queue/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sequence_queue.dir\build.make CMakeFiles/sequence_queue.dir/build
+.PHONY : sequence_queue/fast
+
+#=============================================================================
+# Target rules for targets named loop_queue
+
+# Build rule for target.
+loop_queue: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 loop_queue
+.PHONY : loop_queue
+
+# fast build rule for target.
+loop_queue/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\loop_queue.dir\build.make CMakeFiles/loop_queue.dir/build
+.PHONY : loop_queue/fast
+
 Linear_list/double_link.obj: Linear_list/double_link.cpp.obj
 .PHONY : Linear_list/double_link.obj
 
@@ -406,6 +432,54 @@ demo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/demo.cpp.s
 .PHONY : demo.cpp.s
 
+queue/loop_queue.obj: queue/loop_queue.cpp.obj
+.PHONY : queue/loop_queue.obj
+
+# target to build an object file
+queue/loop_queue.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\loop_queue.dir\build.make CMakeFiles/loop_queue.dir/queue/loop_queue.cpp.obj
+.PHONY : queue/loop_queue.cpp.obj
+
+queue/loop_queue.i: queue/loop_queue.cpp.i
+.PHONY : queue/loop_queue.i
+
+# target to preprocess a source file
+queue/loop_queue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\loop_queue.dir\build.make CMakeFiles/loop_queue.dir/queue/loop_queue.cpp.i
+.PHONY : queue/loop_queue.cpp.i
+
+queue/loop_queue.s: queue/loop_queue.cpp.s
+.PHONY : queue/loop_queue.s
+
+# target to generate assembly for a file
+queue/loop_queue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\loop_queue.dir\build.make CMakeFiles/loop_queue.dir/queue/loop_queue.cpp.s
+.PHONY : queue/loop_queue.cpp.s
+
+queue/sequence_queue.obj: queue/sequence_queue.cpp.obj
+.PHONY : queue/sequence_queue.obj
+
+# target to build an object file
+queue/sequence_queue.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sequence_queue.dir\build.make CMakeFiles/sequence_queue.dir/queue/sequence_queue.cpp.obj
+.PHONY : queue/sequence_queue.cpp.obj
+
+queue/sequence_queue.i: queue/sequence_queue.cpp.i
+.PHONY : queue/sequence_queue.i
+
+# target to preprocess a source file
+queue/sequence_queue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sequence_queue.dir\build.make CMakeFiles/sequence_queue.dir/queue/sequence_queue.cpp.i
+.PHONY : queue/sequence_queue.cpp.i
+
+queue/sequence_queue.s: queue/sequence_queue.cpp.s
+.PHONY : queue/sequence_queue.s
+
+# target to generate assembly for a file
+queue/sequence_queue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sequence_queue.dir\build.make CMakeFiles/sequence_queue.dir/queue/sequence_queue.cpp.s
+.PHONY : queue/sequence_queue.cpp.s
+
 stack/link_stack.obj: stack/link_stack.cpp.obj
 .PHONY : stack/link_stack.obj
 
@@ -468,9 +542,11 @@ help:
 	@echo ... link_list
 	@echo ... link_operate
 	@echo ... link_stack
+	@echo ... loop_queue
 	@echo ... sequence_link
 	@echo ... sequence_list
 	@echo ... sequence_operate
+	@echo ... sequence_queue
 	@echo ... Linear_list/double_link.obj
 	@echo ... Linear_list/double_link.i
 	@echo ... Linear_list/double_link.s
@@ -492,6 +568,12 @@ help:
 	@echo ... demo.obj
 	@echo ... demo.i
 	@echo ... demo.s
+	@echo ... queue/loop_queue.obj
+	@echo ... queue/loop_queue.i
+	@echo ... queue/loop_queue.s
+	@echo ... queue/sequence_queue.obj
+	@echo ... queue/sequence_queue.i
+	@echo ... queue/sequence_queue.s
 	@echo ... stack/link_stack.obj
 	@echo ... stack/link_stack.i
 	@echo ... stack/link_stack.s

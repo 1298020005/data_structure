@@ -29,3 +29,9 @@ add_executable(sequence_link  stack/sequence_stack.cpp)
 
 #### 链栈
 add_executable(link_stack stack/link_stack.cpp)
+
+### 队列
+#### 顺序队列
+add_executable(sequence_queue queue/sequence_queue.cpp)
+#### 循环队列
+add_executable(loop_queue queue/loop_queue.cpp)
