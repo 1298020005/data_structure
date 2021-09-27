@@ -116,6 +116,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named link_list
+
+# Build rule for target.
+link_list: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 link_list
+.PHONY : link_list
+
+# fast build rule for target.
+link_list/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\link_list.dir\build.make CMakeFiles/link_list.dir/build
+.PHONY : link_list/fast
+
+#=============================================================================
+# Target rules for targets named demo
+
+# Build rule for target.
+demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 demo
+.PHONY : demo
+
+# fast build rule for target.
+demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/build
+.PHONY : demo/fast
+
+#=============================================================================
 # Target rules for targets named double_link
 
 # Build rule for target.
@@ -127,6 +153,19 @@ double_link: cmake_check_build_system
 double_link/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\double_link.dir\build.make CMakeFiles/double_link.dir/build
 .PHONY : double_link/fast
+
+#=============================================================================
+# Target rules for targets named sequence_link
+
+# Build rule for target.
+sequence_link: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sequence_link
+.PHONY : sequence_link
+
+# fast build rule for target.
+sequence_link/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sequence_link.dir\build.make CMakeFiles/sequence_link.dir/build
+.PHONY : sequence_link/fast
 
 #=============================================================================
 # Target rules for targets named sequence_list
@@ -155,32 +194,6 @@ sequence_operate/fast:
 .PHONY : sequence_operate/fast
 
 #=============================================================================
-# Target rules for targets named demo
-
-# Build rule for target.
-demo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 demo
-.PHONY : demo
-
-# fast build rule for target.
-demo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/build
-.PHONY : demo/fast
-
-#=============================================================================
-# Target rules for targets named link_list
-
-# Build rule for target.
-link_list: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 link_list
-.PHONY : link_list
-
-# fast build rule for target.
-link_list/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\link_list.dir\build.make CMakeFiles/link_list.dir/build
-.PHONY : link_list/fast
-
-#=============================================================================
 # Target rules for targets named double_link_operate
 
 # Build rule for target.
@@ -205,6 +218,19 @@ link_operate: cmake_check_build_system
 link_operate/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\link_operate.dir\build.make CMakeFiles/link_operate.dir/build
 .PHONY : link_operate/fast
+
+#=============================================================================
+# Target rules for targets named link_stack
+
+# Build rule for target.
+link_stack: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 link_stack
+.PHONY : link_stack
+
+# fast build rule for target.
+link_stack/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\link_stack.dir\build.make CMakeFiles/link_stack.dir/build
+.PHONY : link_stack/fast
 
 Linear_list/double_link.obj: Linear_list/double_link.cpp.obj
 .PHONY : Linear_list/double_link.obj
@@ -380,6 +406,54 @@ demo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/demo.cpp.s
 .PHONY : demo.cpp.s
 
+stack/link_stack.obj: stack/link_stack.cpp.obj
+.PHONY : stack/link_stack.obj
+
+# target to build an object file
+stack/link_stack.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\link_stack.dir\build.make CMakeFiles/link_stack.dir/stack/link_stack.cpp.obj
+.PHONY : stack/link_stack.cpp.obj
+
+stack/link_stack.i: stack/link_stack.cpp.i
+.PHONY : stack/link_stack.i
+
+# target to preprocess a source file
+stack/link_stack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\link_stack.dir\build.make CMakeFiles/link_stack.dir/stack/link_stack.cpp.i
+.PHONY : stack/link_stack.cpp.i
+
+stack/link_stack.s: stack/link_stack.cpp.s
+.PHONY : stack/link_stack.s
+
+# target to generate assembly for a file
+stack/link_stack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\link_stack.dir\build.make CMakeFiles/link_stack.dir/stack/link_stack.cpp.s
+.PHONY : stack/link_stack.cpp.s
+
+stack/sequence_stack.obj: stack/sequence_stack.cpp.obj
+.PHONY : stack/sequence_stack.obj
+
+# target to build an object file
+stack/sequence_stack.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sequence_link.dir\build.make CMakeFiles/sequence_link.dir/stack/sequence_stack.cpp.obj
+.PHONY : stack/sequence_stack.cpp.obj
+
+stack/sequence_stack.i: stack/sequence_stack.cpp.i
+.PHONY : stack/sequence_stack.i
+
+# target to preprocess a source file
+stack/sequence_stack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sequence_link.dir\build.make CMakeFiles/sequence_link.dir/stack/sequence_stack.cpp.i
+.PHONY : stack/sequence_stack.cpp.i
+
+stack/sequence_stack.s: stack/sequence_stack.cpp.s
+.PHONY : stack/sequence_stack.s
+
+# target to generate assembly for a file
+stack/sequence_stack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sequence_link.dir\build.make CMakeFiles/sequence_link.dir/stack/sequence_stack.cpp.s
+.PHONY : stack/sequence_stack.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -393,6 +467,8 @@ help:
 	@echo ... double_link_operate
 	@echo ... link_list
 	@echo ... link_operate
+	@echo ... link_stack
+	@echo ... sequence_link
 	@echo ... sequence_list
 	@echo ... sequence_operate
 	@echo ... Linear_list/double_link.obj
@@ -416,6 +492,12 @@ help:
 	@echo ... demo.obj
 	@echo ... demo.i
 	@echo ... demo.s
+	@echo ... stack/link_stack.obj
+	@echo ... stack/link_stack.i
+	@echo ... stack/link_stack.s
+	@echo ... stack/sequence_stack.obj
+	@echo ... stack/sequence_stack.i
+	@echo ... stack/sequence_stack.s
 .PHONY : help
 
 

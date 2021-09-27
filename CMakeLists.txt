@@ -3,6 +3,9 @@ project(data_structure)
 
 set(CMAKE_CXX_STANDARD 14)
 
+## 测试 练习使用
+add_executable(demo  demo.cpp)
+
 
 ##  linear 线性表
 ### 顺序表
@@ -16,4 +19,13 @@ add_executable(link_operate  Linear_list/link_operate.cpp)
 add_executable(double_link  Linear_list/double_link.cpp)
 add_executable(double_link_operate  Linear_list/doublle_link_operate.cpp)
 
-add_executable(demo  demo.cpp)
+
+
+## 栈与队列
+
+### 栈
+#### 顺序栈
+add_executable(sequence_link  stack/sequence_stack.cpp)
+
+#### 链栈
+add_executable(link_stack stack/link_stack.cpp)
